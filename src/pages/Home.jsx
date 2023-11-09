@@ -6,9 +6,28 @@ import ProductCard from "../components/ProductCard";
 import SpecialProducts from "../components/SpecialProducts";
 import Container from "../components/Container";
 import { services } from "../utils/Data";
-
+// import watch from "../images/watch.jpg";
+import mainbanner from "../images/main-banner.jpg";
+import caterbanner1 from "../images/catbanner-01.jpg";
+import caterbanner2 from "../images/catbanner-02.jpg";
+import caterbanner3 from "../images/catbanner-03.jpg";
+import caterbanner4 from "../images/catbanner-04.jpg";
+import camera from "../images/camera.jpg";
+import tv from "../images/tv.jpg";
+import headphones from "../images/headphone.jpg";
+import subbanner1 from "../images/subbanner-01.webp";
+import subbanner2 from "../images/subbanner-02.webp";
+import subbanner3 from "../images/subbanner-03.webp";
+import subbanner4 from "../images/subbanner-04.webp";
+import brand1 from "../images/brand-01.png";
+import brand2 from "../images/brand-02.png";
+import brand3 from "../images/brand-03.png";
+import brand4 from "../images/brand-04.png";
+import brand5 from "../images/brand-05.png";
+import brand6 from "../images/brand-06.png";
+import brand7 from "../images/brand-07.png";
+import brand8 from "../images/brand-08.png";
 function Home() {
-  useEffect(()=>{},[])
   return (
     <>
       <Container class1="home-wrapper-1 py-5">
@@ -18,7 +37,7 @@ function Home() {
           <div className="col-6">
             <div className="main-banner position-relative p-3">
               <img
-                src="images/main-banner.jpg"
+                src={mainbanner}
                 className="img-fluid rounded-3"
                 alt="main banner"
               />
@@ -34,7 +53,7 @@ function Home() {
             <div className="d-flex flex-wrap justify-content-between gap-10 align-items-center">
               <div className="small-banner position-relative ">
                 <img
-                  src="images/catbanner-01.jpg"
+                  src={caterbanner1}
                   className="img-fluid rounded-3"
                   alt="images"
                 />
@@ -51,7 +70,7 @@ function Home() {
 
               <div className="small-banner position-relative  ">
                 <img
-                  src="images/catbanner-02.jpg "
+                  src={caterbanner2}
                   alt="images"
                   className="img-fluid rounded-3"
                 />
@@ -66,7 +85,7 @@ function Home() {
 
               <div className="small-banner position-relative   ">
                 <img
-                  src="images/catbanner-03.jpg"
+                  src={caterbanner3}
                   alt="images"
                   className="img-fluid rounded-3"
                 />
@@ -81,7 +100,7 @@ function Home() {
 
               <div className="small-banner position-relative  ">
                 <img
-                  src="images/catbanner-04.jpg"
+                  src={caterbanner4}
                   alt="images"
                   className="img-fluid rounded-3"
                 />
@@ -120,7 +139,7 @@ function Home() {
           </div>
         </div>
       </Container>
-     
+
       <section className="home-wrapper-2 py-5">
         <div className="container-xxl">
           <div className="row">
@@ -131,35 +150,35 @@ function Home() {
                     <h6>Music & Gaming</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/camera.jpg" alt="products" />
+                  <img src={camera} alt="products" />
                 </div>
                 <div className="d-flex  align-items-center">
                   <div>
                     <h6>Smart Tv</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/tv.jpg" alt="products" />
+                  <img src={tv} alt="products" />
                 </div>
                 <div className="d-flex  align-items-center">
                   <div>
                     <h6>Camera</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/camera.jpg" alt="products" />
+                  <img src={camera} alt="products" />
                 </div>
                 <div className="d-flex  align-items-center">
                   <div>
                     <h6>Smart Watches</h6>
                     <p> 10 Items</p>
                   </div>
-                  <img src="images/headphone.jpg" alt="products" />
+                  <img src={headphones} alt="products" />
                 </div>
                 <div className="d-flex align-items-center">
                   <div>
                     <h6>Camera</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/camera.jpg" alt="products" />
+                  <img src={camera} alt="products" />
                 </div>
 
                 <div className="d-flex  align-items-center">
@@ -167,21 +186,21 @@ function Home() {
                     <h6>Camera</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/camera.jpg" alt="products" />
+                  <img src={camera} alt="products" />
                 </div>
                 <div className="d-flex  align-items-center">
                   <div>
                     <h6>Camera</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/camera.jpg" alt="products" />
+                  <img src={camera} alt="products" />
                 </div>
                 <div className="d-flex  align-items-center">
                   <div>
                     <h6>Camera</h6>
                     <p>10 Items</p>
                   </div>
-                  <img src="images/camera.jpg" alt="products" />
+                  <img src={camera} alt="products" />
                 </div>
               </div>
             </div>
@@ -208,11 +227,7 @@ function Home() {
           <div className="row">
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img
-                  src="images/subbanner-01.webp"
-                  className="img-fluid"
-                  alt="product"
-                />
+                <img src={subbanner1} className="img-fluid" alt="product" />
                 <div className="famous-content position-absolute">
                   <h5>Big Screen</h5>
                   <h6>Smart Watch Series</h6>
@@ -223,11 +238,7 @@ function Home() {
 
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img
-                  src="images/subbanner-02.webp"
-                  alt="products"
-                  className="img-fluid"
-                />
+                <img src={subbanner2} alt="products" className="img-fluid" />
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">Studio Display</h5>
                   <h6 className="text-dark">600 nits of brightness.</h6>
@@ -237,11 +248,7 @@ function Home() {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img
-                  src="images/subbanner-03.webp"
-                  alt="products"
-                  className="img-fluid"
-                />
+                <img src={subbanner3} alt="products" className="img-fluid" />
 
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">Smart Phones</h5>
@@ -254,11 +261,7 @@ function Home() {
             </div>
             <div className="col-3">
               <div className="famous-card position-relative">
-                <img
-                  src="images/subbanner-04.webp"
-                  alt="products"
-                  className="img-fluid"
-                />
+                <img src={subbanner4} alt="products" className="img-fluid" />
 
                 <div className="famous-content position-absolute">
                   <h5 className="text-dark">Home Speakers</h5>
@@ -311,28 +314,28 @@ function Home() {
               <div className="marquee-inner-wrapper card-wrapper">
                 <Marquee className="d-flex">
                   <div className="mx-4 w-25">
-                    <img src="images/brand-01.png" alt="brand" />
+                    <img src={brand1} alt="brand" />
                   </div>
                   <div className=" w-25">
-                    <img src="images/brand-02.png" alt="brand" />
+                    <img src={brand2} alt="brand" />
                   </div>
                   <div className="mx-4 w-25">
-                    <img src="images/brand-03.png" alt="brand" />
+                    <img src={brand3} alt="brand" />
                   </div>
                   <div className="mx-4 w-25">
-                    <img src="images/brand-04.png" alt="brand" />
+                    <img src={brand4} alt="brand" />
                   </div>
                   <div className="mx-4 w-25">
-                    <img src="images/brand-05.png" alt="brand" />
+                    <img src={brand5} alt="brand" />
                   </div>
                   <div className="mx-4 w-25">
-                    <img src="images/brand-06.png" alt="brand" />
+                    <img src={brand6} alt="brand" />
                   </div>
                   <div className="mx-4 w-25">
-                    <img src="images/brand-07.png" alt="brand" />
+                    <img src={brand7} alt="brand" />
                   </div>
                   <div className="mx-4 w-25">
-                    <img src="images/brand-08.png" alt="brand" />
+                    <img src={brand8} alt="brand" />
                   </div>
                 </Marquee>
               </div>
