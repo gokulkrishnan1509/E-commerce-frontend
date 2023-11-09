@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import BlogCards from "../components/BlogCards";
@@ -8,6 +8,7 @@ import Container from "../components/Container";
 import { services } from "../utils/Data";
 
 function Home() {
+  useEffect(()=>{},[])
   return (
     <>
       <Container class1="home-wrapper-1 py-5">
