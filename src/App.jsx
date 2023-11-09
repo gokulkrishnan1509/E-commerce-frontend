@@ -24,7 +24,7 @@ import Checkout from "./pages/Checkout";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/E-commerce-frontend">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />}></Route>
