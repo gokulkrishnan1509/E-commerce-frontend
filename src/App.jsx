@@ -2,14 +2,7 @@ import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-;
-const lazyLoading =lazy(()=>{
-  return new Promise((resolve)=>{
-    setTimeout(()=>{
-      resolve(import('/pages/Home'))
-    ,3000})
-  })
-})
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import OurStore from "./pages/OurStore";
@@ -28,14 +21,13 @@ import ShippingPolicy from "./pages/ShippingPolicy";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
-import { Suspense, lazy } from "react";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/E-commerce-frontend">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Suspense fallback={<div>Loading...</div>}><lazyLoading/></Suspense>}></Route>
+            <Route index element={<Home />}></Route>
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="product" element={<OurStore />} />
