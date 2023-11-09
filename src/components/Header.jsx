@@ -18,7 +18,6 @@ function Header() {
               <p className="text-white mb-0">
                 Free Shipping Over $100 & Free Returns
               </p>
-<h3>gokul krishnan</h3>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
