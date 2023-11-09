@@ -18,10 +18,23 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/svg+xml" href="https://example.com/vite.svg" alt="ops" />
+  <link rel="icon" type="image/svg+xml" href="https://example.com/vite.svg" alt="ops" />
 
-  <title>E Commerce App</title>
-  <script type="module" crossorigin src="/E-commerce-frontend/assets/index-bbe0c456.js"></script>
+  <title>E Commerce Dummy</title>
+
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search.slice(1).split("&").map(function (s) {
+          return s.replace(/~and~/g, "&");
+        })
+          .join("?");
+        window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      }
+    })(window.location);
+  </script>
+
+  <script type="module" crossorigin src="/E-commerce-frontend/assets/index-20b32708.js"></script>
   <link rel="stylesheet" href="/E-commerce-frontend/assets/index-ab50420f.css">
 </head>
 
